@@ -1,0 +1,19 @@
+{
+	"name": "jamstack-site",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"serve": "npx serve"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/niamhmccoo/jamstack-site.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/niamhmccoo/jamstack-site/issues"
+	},
+	"homepage": "https://github.com/niamhmccoo/jamstack-site#readme",
+	"description": ""
+}
