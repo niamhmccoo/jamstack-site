@@ -15,7 +15,9 @@
 	"homepage": "https://github.com/niamhmccoo/jamstack-site#readme",
 	"description": "",
 	"dependencies": {
+		"dotenv": "^8.2.0",
 		"gatsby": "^3.2.1",
+		"mailgun-js": "^0.22.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"styled-components": "^5.2.3"

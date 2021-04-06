@@ -133,8 +133,8 @@ const Form = () => {
 				console.log(response);
 				setStatus('SUCCESS');
 			})
-			.catch((err) => {
-				console.log(err);
+			.catch((error) => {
+				console.log(error);
 				setStatus('ERROR');
 			});
 	};
@@ -158,7 +158,7 @@ const Form = () => {
 			{state.status === 'PENDING' ? (
 				<PendingForm />
 			) : (
-				<StyledForm onSubmit={handleSubmit}>
+				<StyledForm onSubmit={handleSubmit} data-netlify='true'>
 					<label>
 						Name
 						<input
