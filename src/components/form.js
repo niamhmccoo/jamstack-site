@@ -121,10 +121,23 @@ const Form = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setStatus('PENDING');
-		setTimeout(() => setStatus('SUCCESS'), 1000);
+
+		// using our own functions endpoint
+		// what we'll get back will be whatever we return from our contact function
+		fetch('/api/contact', {
+			method: 'POST',
+			body: JSON.stringify(state),
+		})
+			.then((response) => response.json())
+			.then((response) => {
+				console.log(response);
+				setStatus('SUCCESS');
+			})
+			.catch((err) => {
+				console.log(err);
+				setStatus('ERROR');
+			});
 	};
-	// TODO: send the message
-	// console.log(state);
 
 	if (state.status === 'SUCCESS') {
 		return (
